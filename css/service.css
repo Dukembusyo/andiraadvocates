@@ -1,0 +1,660 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+    }
+
+    body {
+      background: #f6f2ea;
+      color: #2a1a12;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1350px;
+      margin: auto;
+    }
+
+    /* Utility Bar */
+    .utility-bar {
+      background: #2a1a12;
+      color: #f6f2ea;
+      font-size: 13px;
+    }
+
+    .utility-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .utility-links a {
+      color: #f6f2ea;
+      margin-left: 18px;
+      text-decoration: none;
+    }
+
+
+
+    /* Utility links – subtle & consistent */
+.utility-links a {
+  text-decoration: none;
+  color: #ffffff; /* chocolate brown */
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-left: 1rem;
+  transition: color 0.2s ease;
+}
+
+.utility-links a:hover {
+  color: #8b6b4f; /* soft beige-brown */
+}
+
+
+    /* Navigation */
+    .main-nav {
+      background: #ffffff;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 90px;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 18px;
+      max-width: 320px;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 26px;
+      cursor: pointer;
+    }
+
+    .nav-menu {
+      list-style: none;
+      display: flex;
+      gap: 28px;
+      align-items: center;
+    }
+
+
+
+
+    /* Remove default link styling */
+.main-nav a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+}
+
+/* Navigation items */
+.nav-menu li a {
+  color: #3b2a1a; /* dark chocolate brown */
+  transition: color 0.2s ease;
+}
+
+/* Hover effect – subtle, professional */
+.nav-menu li a:hover {
+  color: #8b6b4f; /* soft beige-brown */
+}
+
+/* Logo link */
+.logo a {
+  font-weight: 700;
+  color: #2e1f14;
+}
+
+/* Mega menu links */
+.mega-menu a {
+  color: #3b2a1a;
+  font-size: 0.95rem;
+}
+
+.mega-menu a:hover {
+  color: #8b6b4f;
+}
+
+/* Remove list bullets if any */
+.nav-menu {
+  list-style: none;
+}
+
+
+    .nav-menu li {
+      position: relative;
+      font-size: 15px;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    /* Mega Menu */
+    .has-mega:hover .mega-menu {
+      display: grid;
+    }
+
+    .mega-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #fff;
+      padding: 24px;
+      width: 330px;
+      gap: 14px;
+      border-top: 4px solid #2a1a12;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+      z-index: 10;
+    }
+
+    .mega-menu a {
+      font-size: 14px;
+      color: #2a1a12;
+      text-decoration: none;
+    }
+
+    /* HERO SWIPER */
+    .hero.swiper {
+      min-height: 85vh;
+      position: relative;
+    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  background: #f6f2ea;
+  color: #2a1a12;
+}
+
+.container {
+  width: 90%;
+  max-width: 1350px;
+  margin: auto;
+}
+
+/* Utility Bar */
+.utility-bar {
+  background: #2a1a12;
+  color: #f6f2ea;
+  font-size: 13px;
+}
+
+.utility-flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  flex-wrap: wrap;
+}
+
+/* Navigation */
+.main-nav {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+/* Responsive Navigation */
+@media (max-width: 992px) {
+.menu-toggle {
+display: block;
+}
+
+
+.nav-menu {
+position: absolute;
+top: 90px;
+left: 0;
+width: 100%;
+background: #ffffff;
+flex-direction: column;
+align-items: flex-start;
+padding: 30px;
+gap: 18px;
+display: none;
+}
+
+
+.nav-menu.show {
+display: flex;
+}
+
+
+.has-mega .mega-menu {
+position: static;
+width: 100%;
+box-shadow: none;
+border-top: none;
+padding: 10px 0 0 10px;
+}
+
+
+.has-mega:hover .mega-menu {
+display: none;
+}
+
+
+.has-mega.active .mega-menu {
+display: grid;
+}
+}
+
+
+@media (max-width: 480px) {
+.logo {
+font-size: 16px;
+}
+
+
+.utility-flex {
+justify-content: center;
+text-align: center;
+}
+}
+
+
+
+
+
+
+
+/* ================= BASE ================= */
+.services-wrapper {
+  background: #f9f8f6;
+}
+
+/* ================= SERVICES NAV ================= */
+.services-nav {
+  position: sticky;
+  top: 90px;
+  z-index: 50;
+  background: #fff;
+  display: flex;
+  gap: 1.2rem;
+  padding: 1rem 6%;
+  overflow-x: auto;
+  border-bottom: 1px solid rgba(0,0,0,.08);
+}
+
+.services-nav a {
+  font-size: 13px;
+  text-decoration: none;
+  color: #2a1a12;
+  white-space: nowrap;
+  opacity: .6;
+  transition: opacity .25s ease;
+}
+
+.services-nav a.active,
+.services-nav a:hover {
+  opacity: 1;
+}
+
+/* ================= VISIBILITY CONTROL ================= */
+.service-panel {
+  display: none;
+}
+
+.service-panel.active {
+  display: block;
+}
+
+/* ================= HERO ================= */
+/* ================= HERO FIX ================= */
+
+.service-hero {
+  position: relative;
+  width: 100%;
+  min-height: 75vh;          /* reasonable height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  /* BACKGROUND IMAGE */
+  background-size: cover;     /* 🔥 THIS IS THE KEY */
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* DARK OVERLAY */
+.service-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.65),
+    rgba(0,0,0,0.55)
+  );
+  z-index: 1;
+}
+
+/* HERO TEXT */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  padding: 0 6%;
+  color: #ffffff;
+}
+
+/* SMALL EYEBROW */
+.hero-content .eyebrow {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  opacity: 0.85;
+}
+
+/* TITLE */
+.hero-content h1 {
+  font-size: clamp(36px, 5vw, 58px);
+  line-height: 1.15;
+  margin-bottom: 18px;
+  font-weight: 700;
+}
+
+/* SUBTEXT */
+.hero-content p {
+  font-size: clamp(16px, 2vw, 20px);
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.95;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .service-hero {
+    min-height: 65vh;
+  }
+
+  .hero-content {
+    padding: 0 8%;
+  }
+}
+
+
+
+/* ================= BODY ================= */
+.service-body {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 4rem;
+  padding: 6rem 8%;
+  background: #fff;
+}
+
+.service-text h2 {
+  font-size: 30px;
+  margin-bottom: 16px;
+}
+
+.service-text ul {
+  margin-top: 1rem;
+  padding-left: 18px;
+}
+
+.service-text li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* ================= IMAGES ================= */
+.service-media {
+  display: grid;
+  gap: 1.8rem;
+}
+
+.service-media img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 20px 50px rgba(0,0,0,.18);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .service-body {
+    grid-template-columns: 1fr;
+    padding: 4rem 6%;
+  }
+
+  .service-hero {
+    height: 70vh;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* fOOTER */
+/* =========================
+   LAW FIRM FOOTER
+========================= */
+
+.lf-footer {
+  background: #f6f2ea;
+  padding: 5rem 0 2rem;
+  color: #2a1a12;
+  position: relative;
+}
+
+.lf-footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  margin-bottom: 3rem;
+}
+
+.lf-footer h4 {
+  font-size: .9rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  margin-bottom: 1.4rem;
+}
+
+.lf-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lf-footer ul li {
+  margin-bottom: .6rem;
+}
+
+.lf-footer a {
+  text-decoration: none;
+  color: inherit;
+  font-size: .9rem;
+  opacity: .85;
+}
+
+.lf-footer a:hover {
+  opacity: 1;
+}
+
+/* Contact column */
+.lf-footer-contact {
+  text-align: left;
+}
+
+.lf-footer-social {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.4rem;
+}
+
+.lf-footer-social a {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* CTA */
+.lf-footer-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  font-weight: 600;
+}
+
+/* Base */
+.lf-footer-base {
+  border-top: 1px solid rgba(42,26,18,.25);
+  padding-top: 1.5rem;
+  font-size: .8rem;
+  text-align: center;
+  opacity: .7;
+}
+
+/* Floating Find Lawyer */
+.lf-find-lawyer {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  background: #0b3a63;
+  color: #fff;
+  border: none;
+  padding: .9rem 1.4rem;
+  border-radius: 999px;
+  font-size: .85rem;
+  display: flex;
+  gap: .6rem;
+  align-items: center;
+  cursor: pointer;
+  z-index: 100;
+}
+
+/* Back to top */
+.lf-back-top {
+  position: fixed;
+  right: 2rem;
+  bottom: 5.5rem;
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(0,0,0,.08);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+
+
+
+
+/* FLOATING STACK – VERTICAL CENTER */
+.lf-float-stack {
+  position: fixed;
+  right: 5.5rem;          /* inward from edge */
+  top: 50%;               /* vertical center */
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  z-index: 100;
+}
+
+
+
+/* RATE CARD – matches Find Advocate */
+.lf-rate-card {
+  position: fixed;
+  right: 2rem;
+  bottom: 8.5rem; /* above back-to-top */
+  background: #5d3a1a;
+  color: #fff;
+  border-radius: 999px;
+  padding: .9rem 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  font-size: .85rem;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 100;
+  transition: background 0.3s ease;
+}
+.lf-rate-card:hover {
+  background: #7a4f2b;
+}
+
+/* SOCIAL LINKS STACK */
+.lf-social-stack {
+  position: fixed;
+  right: 2rem;
+  bottom: 11.5rem; /* above Rate Card */
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+  z-index: 100;
+}
+
+.lf-social-stack a {
+  background: #5d3a1a;
+  color: #fff;
+  padding: .6rem 1rem;
+  border-radius: 999px;
+  text-align: center;
+  font-size: .85rem;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.lf-social-stack a:hover {
+  background: #7a4f2b;
+}
+
+

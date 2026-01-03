@@ -1,0 +1,773 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+    }
+
+    body {
+      background: #f6f2ea;
+      color: #2a1a12;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1350px;
+      margin: auto;
+    }
+
+    /* Utility Bar */
+    .utility-bar {
+      background: #2a1a12;
+      color: #f6f2ea;
+      font-size: 13px;
+    }
+
+    .utility-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .utility-links a {
+      color: #f6f2ea;
+      margin-left: 18px;
+      text-decoration: none;
+    }
+
+    /* Utility links – subtle & consistent */
+.utility-links a {
+  text-decoration: none;
+  color: #ffffff; /* chocolate brown */
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-left: 1rem;
+  transition: color 0.2s ease;
+}
+
+.utility-links a:hover {
+  color: #8b6b4f; /* soft beige-brown */
+}
+
+
+    /* Navigation */
+    .main-nav {
+      background: #ffffff;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+
+
+    /* Remove default link styling */
+.main-nav a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+}
+
+/* Navigation items */
+.nav-menu li a {
+  color: #3b2a1a; /* dark chocolate brown */
+  transition: color 0.2s ease;
+}
+
+/* Hover effect – subtle, professional */
+.nav-menu li a:hover {
+  color: #8b6b4f; /* soft beige-brown */
+}
+
+/* Logo link */
+.logo a {
+  font-weight: 700;
+  color: #2e1f14;
+}
+
+/* Mega menu links */
+.mega-menu a {
+  color: #3b2a1a;
+  font-size: 0.95rem;
+}
+
+.mega-menu a:hover {
+  color: #8b6b4f;
+}
+
+/* Remove list bullets if any */
+.nav-menu {
+  list-style: none;
+}
+
+    .nav-flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 90px;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 18px;
+      max-width: 320px;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 26px;
+      cursor: pointer;
+    }
+
+    .nav-menu {
+      list-style: none;
+      display: flex;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .nav-menu li {
+      position: relative;
+      font-size: 15px;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    /* Mega Menu */
+    .has-mega:hover .mega-menu {
+      display: grid;
+    }
+
+    .mega-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #fff;
+      padding: 24px;
+      width: 350px;
+      gap: 14px;
+      border-top: 4px solid #2a1a12;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+      z-index: 10;
+    }
+
+
+    .mega-menu a {
+      font-size: 14px;
+      color: #2a1a12;
+      text-decoration: none;
+    }
+
+    /* HERO SWIPER */
+    .hero.swiper {
+      min-height: 85vh;
+      position: relative;
+    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  background: #f6f2ea;
+  color: #2a1a12;
+}
+
+.container {
+  width: 90%;
+  max-width: 1350px;
+  margin: auto;
+}
+
+/* Utility Bar */
+.utility-bar {
+  background: #2a1a12;
+  color: #f6f2ea;
+  font-size: 13px;
+}
+
+.utility-flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  flex-wrap: wrap;
+}
+
+/* Navigation */
+.main-nav {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+/* Responsive Navigation */
+@media (max-width: 992px) {
+.menu-toggle {
+display: block;
+}
+
+
+.nav-menu {
+position: absolute;
+top: 90px;
+left: 0;
+width: 100%;
+background: #ffffff;
+flex-direction: column;
+align-items: flex-start;
+padding: 30px;
+gap: 18px;
+display: none;
+}
+
+
+.nav-menu.show {
+display: flex;
+}
+
+
+.has-mega .mega-menu {
+position: static;
+width: 100%;
+box-shadow: none;
+border-top: none;
+padding: 10px 0 0 10px;
+}
+
+
+.has-mega:hover .mega-menu {
+display: none;
+}
+
+
+.has-mega.active .mega-menu {
+display: grid;
+}
+}
+
+
+@media (max-width: 480px) {
+.logo {
+font-size: 16px;
+}
+
+
+.utility-flex {
+justify-content: center;
+text-align: center;
+}
+}
+
+
+
+
+
+
+
+
+body {
+  background: #F6F2EA;
+  color: #3E2723;
+}
+
+.section-header h2 { color: #340901; }
+.firm-subnav a.active, .firm-subnav a:hover { color: #A1887F; }
+
+/* Grids, cards */
+.practice-grid, .values-grid, .structure-grid, .leadership-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.practice-card, .value-card, .structure-card, .leader-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.practice-card h3, .value-card h3, .structure-card h4, .leader-info h3 {
+  color: #3E2723;
+}
+
+/* Fade-in animation on scroll */
+.firm-panel.active .practice-card,
+.firm-panel.active .value-card,
+.firm-panel.active .structure-card,
+.firm-panel.active .leader-card {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover effects */
+.practice-card:hover, .value-card:hover, .structure-card:hover, .leader-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  transition: all 0.4s ease;
+}
+
+/* Subnav */
+.firm-subnav {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Responsive */
+@media(max-width:1000px) {
+  .firm-grid { grid-template-columns: 1fr; }
+}
+
+
+
+
+
+
+
+
+
+
+
+body {
+  background: #fcfcfc;
+  color: #2a1a12;
+}
+
+
+
+.container {
+  width: 90%;
+  max-width: 1350px;
+  margin: auto;
+}
+
+/* ===== SUB NAV ===== */
+.firm-subnav {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid #f7f7f7;
+}
+
+.firm-subnav a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #2a1a12;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.firm-subnav a:hover,
+.firm-subnav a.active {
+  font-weight: 600;
+  opacity: 1;
+  color: #0a64a0;
+}
+
+/* ===== PANELS ===== */
+.firm-panel {
+  display: none;
+  padding: 8rem 0;
+}
+
+.firm-panel.active {
+  display: block;
+}
+
+/* ===== SECTION HEADERS ===== */
+.section-header {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 4rem auto;
+}
+
+.section-header h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #380000;
+}
+
+.section-header p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #2a1a12;
+}
+
+/* ===== GRIDS ===== */
+.firm-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 4rem;
+  margin-bottom: 5rem;
+}
+
+.firm-text p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.9;
+}
+
+/* ===== MEDIA ===== */
+.firm-media {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.5rem;
+}
+
+.firm-media img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+.firm-media .primary {
+  grid-column: 1 / span 8;
+}
+
+.firm-media .secondary {
+  grid-column: 5 / span 8;
+  margin-top: 20%;
+}
+
+/* ===== LEADERSHIP ===== */
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 3rem;
+}
+
+.leader-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease;
+}
+
+.leader-card:hover {
+  transform: translateY(-6px);
+}
+
+.leader-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #0a64a0;
+}
+
+.leader-info span {
+  display: block;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.75rem;
+}
+
+.leader-info p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* ===== VALUES GRID ===== */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.value-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-6px);
+}
+
+.value-card h3 {
+  font-size: 1.4rem;
+  color: #0a64a0;
+  margin-bottom: 1rem;
+}
+
+/* ===== STRUCTURE ===== */
+.structure-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.structure-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease;
+}
+
+.structure-card:hover {
+  transform: translateY(-6px);
+}
+
+.structure-card h4 {
+  font-size: 1.3rem;
+  color: #0a64a0;
+  margin-bottom: 1rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1000px) {
+  .firm-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .leadership-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .firm-media .secondary {
+    margin-top: 12%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* fOOTER */
+/* =========================
+   LAW FIRM FOOTER
+========================= */
+
+.lf-footer {
+  background: #f6f2ea;
+  padding: 5rem 0 2rem;
+  color: #2a1a12;
+  position: relative;
+}
+
+.lf-footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  margin-bottom: 3rem;
+}
+
+.lf-footer h4 {
+  font-size: .9rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  margin-bottom: 1.4rem;
+}
+
+.lf-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lf-footer ul li {
+  margin-bottom: .6rem;
+}
+
+.lf-footer a {
+  text-decoration: none;
+  color: inherit;
+  font-size: .9rem;
+  opacity: .85;
+}
+
+.lf-footer a:hover {
+  opacity: 1;
+}
+
+/* Contact column */
+.lf-footer-contact {
+  text-align: left;
+}
+
+.lf-footer-social {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.4rem;
+}
+
+.lf-footer-social a {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* CTA */
+.lf-footer-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  font-weight: 600;
+}
+
+/* Base */
+.lf-footer-base {
+  border-top: 1px solid rgba(42,26,18,.25);
+  padding-top: 1.5rem;
+  font-size: .8rem;
+  text-align: center;
+  opacity: .7;
+}
+
+/* Floating Find Lawyer */
+.lf-find-lawyer {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  background: #0b3a63;
+  color: #fff;
+  border: none;
+  padding: .9rem 1.4rem;
+  border-radius: 999px;
+  font-size: .85rem;
+  display: flex;
+  gap: .6rem;
+  align-items: center;
+  cursor: pointer;
+  z-index: 100;
+}
+
+/* Back to top */
+.lf-back-top {
+  position: fixed;
+  right: 2rem;
+  bottom: 5.5rem;
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(0,0,0,.08);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+/* FLOATING STACK – VERTICAL CENTER */
+.lf-float-stack {
+  position: fixed;
+  right: 5.5rem;          /* inward from edge */
+  top: 50%;               /* vertical center */
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  z-index: 100;
+}
+
+
+
+/* RATE CARD – matches Find Advocate */
+.lf-rate-card {
+  position: fixed;
+  right: 2rem;
+  bottom: 8.5rem; /* above back-to-top */
+  background: #5d3a1a;
+  color: #fff;
+  border-radius: 999px;
+  padding: .9rem 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  font-size: .85rem;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 100;
+  transition: background 0.3s ease;
+}
+.lf-rate-card:hover {
+  background: #7a4f2b;
+}
+
+/* SOCIAL LINKS STACK */
+.lf-social-stack {
+  position: fixed;
+  right: 2rem;
+  bottom: 11.5rem; /* above Rate Card */
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+  z-index: 100;
+}
+
+.lf-social-stack a {
+  background: #5d3a1a;
+  color: #fff;
+  padding: .6rem 1rem;
+  border-radius: 999px;
+  text-align: center;
+  font-size: .85rem;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.lf-social-stack a:hover {
+  background: #7a4f2b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
