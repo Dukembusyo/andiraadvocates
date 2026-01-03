@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- SEO -->
+  <title>Wandira Cynthia & Company Advocates | Kenyan Law Firm</title>
+  <meta name="description" content="Wandira Cynthia & Company Advocates is a Kenyan law firm providing strategic, client-focused legal services in real estate, commercial law, litigation, and regulatory advisory.">
+  <meta name="keywords" content="Kenyan law firm, advocates Kenya, conveyancing, litigation, corporate law">
+  <meta name="author" content="Wandira Cynthia & Company Advocates">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Wandira Cynthia & Company Advocates">
+  <meta property="og:description" content="Strategic, trusted, client-focused legal solutions in Kenya.">
+  <meta property="og:type" content="website">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<!-- Utility Bar -->
+  <div class="utility-bar">
+    <div class="container utility-flex">
+      <div>info@wandiraadvocates.com | +254 717 315 061</div>
+      <div class="utility-links">
+        <a href="#">Insights</a>
+       <a href="firm.html#careers">Careers</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <div class="container nav-flex">
+      <div class="logo">Wandira Cynthia & Company Advocates</div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li class="has-mega" onclick="toggleMega(this)">The Firm
+          <div class="mega-menu">
+<a href="firm.html#about">About the Firm</a>
+<a href="firm.html#leadership">Leadership</a>
+<a href="firm.html#values">Values & Ethics</a>
+<a href="firm.html#structure">Organizational Structure</a>
+<a href="firm.html#careers">Careers</a>
+
+          </div>
+        </li>
+        <li class="has-mega" onclick="toggleMega(this)">Services
+  <div class="mega-menu two-col">
+    <a href="service.html#real-estate">Real Estate & Conveyancing</a>
+    <a href="service.html#litigation">Litigation & Dispute Resolution</a>
+    <a href="service.html#corporate">Commercial & Corporate Law</a>
+    <a href="service.html#banking">Banking & Finance</a>
+    <a href="service.html#tax">Tax Law & Advisory</a>
+    <a href="service.html#intellectual-property">Intellectual Property</a>
+    <a href="service.html#employment">Employment & Labour</a>
+    <a href="service.html#technology">Technology & Data Protection</a>
+    <a href="service.html#family">Family & Succession</a>
+    <a href="service.html#immigration">Immigration Law</a>
+    <a href="service.html#environment">Environmental & Energy Law</a>
+    <a href="service.html#human-rights">Human Rights & Constitutional Law</a>
+  </div>
+        </li>
+      <li><a href="insights.html">Insights</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<!-- HERO SWIPER -->
+<section class="hero swiper" aria-label="Homepage highlights">
+  <div class="swiper-wrapper">
+
+    <!-- SLIDE 1 -->
+    <div class="swiper-slide hero-slide" data-overlay="0.8">
+      <div class="hero-bg">
+        <video autoplay muted loop playsinline preload="metadata">
+          <source src="video/video.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content container">
+        <span class="hero-tag">Wandira Cynthia & Company Advocates</span>
+        <h1>Clear Legal Thinking<br>for Complex Decisions</h1>
+        <p>
+          A Kenyan law firm providing precise, commercially grounded legal
+          advice across property, commercial, and dispute resolution matters.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#" class="btn primary">Practice Areas</a>
+          <a href="#" class="btn secondary">Contact the Firm</a>
+          <a href="#" class="btn ghost">Our Approach</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 2 -->
+    <div class="swiper-slide hero-slide" data-overlay="0.65">
+      <div class="hero-bg">
+        <video autoplay muted loop playsinline preload="metadata">
+          <source src="video/court.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content container">
+        <span class="hero-tag">Our Approach</span>
+        <h1>Integrity. Clarity.<br>Timely Execution.</h1>
+        <p>
+          We combine sound legal expertise with a clear understanding
+          of our clients’ commercial and personal objectives.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#" class="btn primary">How We Work</a>
+          <a href="#" class="btn ghost">Meet the Team</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 3 -->
+    <div class="swiper-slide hero-slide" data-overlay="0.7">
+      <div class="hero-bg">
+        <video autoplay muted loop playsinline preload="metadata">
+          <source src="video/prop.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content container">
+        <span class="hero-tag">Core Practice Areas</span>
+        <h1>Property, Commercial<br>& Dispute Resolution</h1>
+        <p>
+          Strategic legal support in conveyancing, commercial transactions,
+          litigation, and regulatory advisory.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#" class="btn primary">View Practice Areas</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Scroll Indicator -->
+  <div class="hero-scroll">
+    <span>Scroll to explore</span>
+    <div class="scroll-line"></div>
+  </div>
+
+  <div class="swiper-pagination"></div>
+</section>
+
+<!-- HERO → NEXT SECTION TRANSITION -->
+<div class="hero-bridge"></div>
+
+
+
+<!-- About us -->
+<section class="firm-intro">
+  <div class="container intro-grid">
+
+    <!-- LEFT: IMAGES -->
+    <div class="intro-media" data-reveal="left">
+      <img src="images/law.png" alt="Legal advisory meeting" class="img-primary">
+      <img src="images/property law.png" alt="Property documentation" class="img-secondary">
+    </div>
+
+    <!-- RIGHT: CONTENT -->
+    <div class="intro-content" data-reveal="right">
+      <span class="intro-eyebrow">Raising Legal Standards</span>
+
+      <h2>
+        Welcome to Wandira Cynthia<br>
+        & Company Advocates
+      </h2>
+
+      <p>
+        Wandira Cynthia & Company Advocates is a Kenyan law firm providing
+        clear, practical, and commercially grounded legal advice.
+      </p>
+
+      <p>
+        We support individuals, businesses, and institutions navigating
+        complex legal environments with clarity and precision.
+      </p>
+
+      <a href="#" class="btn primary has-tooltip">
+        Read More
+        <span class="tooltip">Learn more about the firm</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+<section class="practice-areas">
+  <div class="container">
+
+    <div class="section-head center" data-reveal>
+      <span class="section-eyebrow">Expertise</span>
+      <h2>Core Practice Areas</h2>
+      <p class="section-subtext">
+        Focused legal services delivered with precision and commercial awareness.
+      </p>
+    </div>
+
+    <div class="practice-grid">
+      <a href="#" class="practice-card" data-reveal>
+        <span class="card-index">01</span>
+        <h3>Real Estate & Conveyancing</h3>
+        <p>Acquisitions, leases, securities, transfers, and registration of interests.</p>
+      </a>
+
+      <a href="#" class="practice-card" data-reveal>
+        <span class="card-index">02</span>
+        <h3>Litigation & Dispute Resolution</h3>
+        <p>Strategic representation before courts, tribunals, and arbitral forums.</p>
+      </a>
+
+      <a href="#" class="practice-card" data-reveal>
+        <span class="card-index">03</span>
+        <h3>Commercial & Corporate Law</h3>
+        <p>Contracts, structuring, governance, and regulatory compliance.</p>
+      </a>
+
+      <a href="#" class="practice-card" data-reveal>
+        <span class="card-index">04</span>
+        <h3>Banking & Finance</h3>
+        <p>Lending transactions, securities, and financial documentation.</p>
+      </a>
+
+      <a href="#" class="practice-card" data-reveal>
+        <span class="card-index">05</span>
+        <h3>Employment & Labour Law</h3>
+        <p>Workplace relations, compliance, and dispute management.</p>
+      </a>
+
+      <a href="#" class="practice-card" data-reveal>
+        <span class="card-index">06</span>
+        <h3>Tax & Regulatory Advisory</h3>
+        <p>Guidance on tax obligations and evolving regulatory frameworks.</p>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- why the firm -->
+
+
+<section class="why-firm">
+  <div class="container">
+
+    <div class="section-head center" data-reveal>
+      <span class="section-eyebrow">Why Us</span>
+      <h2>Why Clients Choose us</h2>
+      <p class="section-subtext">
+        Clear advice, disciplined execution, and unwavering professional integrity.
+      </p>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-item" data-reveal>
+        <h4>Commercially Grounded Advice</h4>
+        <p>
+          We align legal strategy with business realities and risk considerations.
+        </p>
+      </div>
+
+      <div class="why-item" data-reveal>
+        <h4>Proven Legal Experience</h4>
+        <p>
+          Our lawyers bring depth across transactions, disputes, and advisory work.
+        </p>
+      </div>
+
+      <div class="why-item" data-reveal>
+        <h4>Discretion & Professionalism</h4>
+        <p>
+          We uphold strict confidentiality and principled legal practice.
+        </p>
+      </div>
+
+      <div class="why-item" data-reveal>
+        <h4>Client-Focused Engagement</h4>
+        <p>
+          Each matter receives tailored attention and partner-level oversight.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!---FOOTER--->
+<footer class="lf-footer" role="contentinfo">
+  <div class="container lf-footer-grid">
+
+    <!-- COLUMN 1 -->
+    <div class="lf-footer-col">
+      <h4>Learn More</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Expertise</a></li>
+        <li><a href="#">Insights</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- COLUMN 2 -->
+    <div class="lf-footer-col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="#">Legal Notices</a></li>
+        <li><a href="#">Tip-Offs Hotline</a></li>
+        <li><a href="#">Subscriptions</a></li>
+        <li><a href="#">PAIA Manual</a></li>
+      </ul>
+    </div>
+
+    <!-- COLUMN 3 -->
+    <div class="lf-footer-col lf-footer-contact">
+      <h4>Get in Touch</h4>
+
+      <div class="lf-footer-social">
+        <a href="#" aria-label="LinkedIn">in</a>
+        <a href="#" aria-label="X (Twitter)">X</a>
+      </div>
+
+      <a href="#" class="lf-footer-cta">
+        Contact Us <span aria-hidden="true">›</span>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- FOOTER BASE -->
+  <div class="lf-footer-base">
+    <span>Copyright © 2025 Wandira Cynthia & Company Advocates</span>
+  </div>
+
+  <!-- FLOATING CTA -->
+  <button class="lf-find-lawyer" aria-label="Find a lawyer">
+    Find an advocate
+    <span>⌄</span>
+  </button>
+
+  <!-- BACK TO TOP -->
+  <button class="lf-back-top" aria-label="Back to top">
+    ↑
+  </button>
+
+
+
+  <!-- FLOATING RATE CARD -->
+<a href="rate-card.pdf" target="_blank" 
+   class="lf-find-lawyer lf-rate-card" 
+   aria-label="View Rate Card">
+  Rate Card <span>›</span>
+</a>
+
+<!-- FLOATING SOCIAL LINKS -->
+<div class="lf-social-stack">
+  <a href="https://wa.me/254717315061" target="_blank" class="lf-social-btn lf-wa" aria-label="WhatsApp">WhatsApp</a>
+  <a href="https://facebook.com/wandiraadvocates" target="_blank" class="lf-social-btn" aria-label="Facebook">Facebook</a>
+  <a href="https://linkedin.com/company/wandiraadvocates" target="_blank" class="lf-social-btn" aria-label="LinkedIn">LinkedIn</a>
+  <a href="https://twitter.com/wandiraadvocates" target="_blank" class="lf-social-btn" aria-label="X">X</a>
+</div>
+
+
+
+</footer>
+
+
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+
+
+
+
+</body>
+</html>
