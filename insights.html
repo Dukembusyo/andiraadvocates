@@ -32,7 +32,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/insights.css">
 </head>
 
 <body>
@@ -42,7 +42,7 @@
       <div>info@wandiraadvocates.com | +254 717 315 061</div>
       <div class="utility-links">
         <a href="insights.html">Insights</a>
-      <a href="firm.html#careers">Careers</a>
+       <a href="firm.html#careers">Careers</a>
       </div>
     </div>
   </div>
@@ -97,108 +97,138 @@
 
 
 
+<section class="insights-section">
+  <div class="container container-wide">
 
-
-
-
-  <section class="firm-panel contact-panel active" id="contact">
-  <div class="container">
-
-    <!-- HEADER -->
-    <header class="section-header align-center">
-      <span class="section-eyebrow">Contact</span>
-      <h2>Speak With Our Legal Team</h2>
-      <p>
-        Clear advice. Professional representation.
-        Confidential handling of all matters.
+    <!-- SECTION HEADER -->
+    <header class="section-header align-left">
+      <span class="section-eyebrow">Insights</span>
+      <h2>Legal Insights, Analysis & Developments</h2>
+      <p class="section-intro">
+        Our Insights provide legal updates, regulatory analysis, and expert commentary
+        on key developments affecting businesses, institutions, and individuals in Kenya
+        and across the region.
       </p>
     </header>
 
-    <!-- BEFORE / AFTER -->
-    <div class="contact-flow">
+    <!-- INSIGHTS GRID -->
+    <div class="insights-grid">
 
-      <div class="flow-card before reveal">
-        <h4>Before You Engage</h4>
-        <ul>
-          <li>Uncertainty around legal options</li>
-          <li>Exposure to avoidable risk</li>
-          <li>Delayed or incorrect decisions</li>
-        </ul>
-      </div>
+      <!-- CARD 1 -->
+      <article class="insight-card">
+        <div class="insight-image">
+          <img src="images/data.png" alt="Data Protection Law Kenya">
+        </div>
 
-      <div class="flow-divider"></div>
+        <span class="card-category">Regulatory & Compliance</span>
 
-      <div class="flow-card after reveal">
-        <h4>After Speaking With Us</h4>
-        <ul>
-          <li>Clear, practical legal direction</li>
-          <li>Risk-aware, compliant action</li>
-          <li>Professional legal support</li>
-        </ul>
-      </div>
+        <h3>
+          <a href="#">
+            Data Protection & Cyber Law Compliance in Kenya: Practical Obligations for Businesses
+          </a>
+        </h3>
+
+        <p>
+          Kenya’s data protection framework continues to impose increasing compliance
+          obligations on employers, financial institutions, and technology platforms.
+          This insight examines regulatory expectations, enforcement trends, and
+          practical compliance measures under the Data Protection Act.
+        </p>
+
+        <div class="card-meta">
+          <span>Technology & Data Protection</span>
+          <span>•</span>
+          <span>2025</span>
+        </div>
+      </article>
+
+      <!-- CARD 2 -->
+      <article class="insight-card">
+        <div class="insight-image">
+          <img src="images/commercial law.png" alt="Corporate Governance Kenya">
+        </div>
+
+        <span class="card-category">Corporate Governance</span>
+
+        <h3>
+          <a href="#">
+            Directors’ Duties, Corporate Governance & Risk Management in Kenya
+          </a>
+        </h3>
+
+        <p>
+          Directors and senior executives face growing personal liability exposure
+          arising from governance failures and regulatory non-compliance. This insight
+          outlines directors’ duties, recent judicial interpretation, and risk mitigation
+          strategies for companies and shareholders.
+        </p>
+
+        <div class="card-meta">
+          <span>Commercial & Corporate Law</span>
+          <span>•</span>
+          <span>2025</span>
+        </div>
+      </article>
+
+      <!-- CARD 3 -->
+      <article class="insight-card">
+        <div class="insight-image">
+          <img src="images/labour.png" alt="Employment Law Kenya">
+        </div>
+
+        <span class="card-category">Employment & Labour</span>
+
+        <h3>
+          <a href="#">
+            Employment Termination & Redundancy: Lessons from Recent Court Decisions
+          </a>
+        </h3>
+
+        <p>
+          Employment disputes remain a significant area of litigation in Kenya.
+          This insight highlights procedural requirements, redundancy obligations,
+          and key lessons from recent Employment and Labour Relations Court decisions.
+        </p>
+
+        <div class="card-meta">
+          <span>Employment & Labour Law</span>
+          <span>•</span>
+          <span>2025</span>
+        </div>
+      </article>
+
+      <!-- CARD 4 (OPTIONAL BUT RECOMMENDED) -->
+      <article class="insight-card">
+        <div class="insight-image">
+          <img src="images/estate1.png" alt="Real Estate Law Kenya">
+        </div>
+
+        <span class="card-category">Property & Conveyancing</span>
+
+        <h3>
+          <a href="#">
+            Real Estate Transactions in Kenya: Due Diligence, Risk & Regulatory Compliance
+          </a>
+        </h3>
+
+        <p>
+          Property transactions require careful legal due diligence to mitigate risks
+          related to title defects, fraud, and regulatory approvals. This insight examines
+          key legal considerations for investors, developers, and lenders.
+        </p>
+
+        <div class="card-meta">
+          <span>Real Estate & Conveyancing</span>
+          <span>•</span>
+          <span>2025</span>
+        </div>
+      </article>
 
     </div>
 
-    <!-- CONTACT GRID -->
-    <div class="contact-grid">
-
-      <!-- FORM -->
-      <div class="contact-card reveal">
-        <h3>Send an Inquiry</h3>
-        <p class="muted">
-          Briefly outline your matter and our team will respond.
-        </p>
-
-        <form id="contactFormPremium">
-          <input type="text" placeholder="Full Name" required>
-          <input type="email" placeholder="Email Address" required>
-          <input type="tel" placeholder="Phone Number" required>
-
-          <select required>
-            <option value="" disabled selected>Inquiry Type</option>
-            <option>General Inquiry</option>
-            <option>Legal Consultation</option>
-            <option>Careers / Internship</option>
-            <option>Department Contact</option>
-          </select>
-
-          <textarea rows="5" placeholder="Brief description of your matter" required></textarea>
-
-          <button class="btn-primary full">Submit Inquiry</button>
-        </form>
-      </div>
-
-      <!-- INFO -->
-      <div class="contact-card info reveal">
-        <h3>Firm Contact Details</h3>
-
-        <div class="info-block">
-          <span>Email</span>
-          <a href="mailto:info@wandiraadvocates.com">info@wandiraadvocates.com</a>
-        </div>
-
-        <div class="info-block">
-          <span>Phone</span>
-          <a href="tel:+254717315061">+254 717 315 061</a>
-        </div>
-
-        <div class="info-block">
-          <span>Office</span>
-          <p>12 Legal Plaza, Nairobi, Kenya</p>
-        </div>
-
-        <div class="info-block">
-          <span>Hours</span>
-          <p>Mon – Fri, 8:00 AM – 5:30 PM</p>
-        </div>
-
-        <div class="map-frame">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127653.93867890507!2d36.7065!3d-1.2921"
-            loading="lazy"></iframe>
-        </div>
-      </div>
-
+    <!-- OPTIONAL CTA -->
+    <div class="insights-cta">
+      <a href="#" class="btn-secondary">View All Insights</a>
     </div>
 
   </div>
@@ -211,11 +241,20 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <p class="seo-trust">
   Wandira Cynthia & Company Advocates is a duly registered Kenyan law firm,
   committed to ethical practice, professional excellence, and client confidentiality.
 </p>
-
 
   <!---FOOTER--->
 <footer class="lf-footer" role="contentinfo">
@@ -282,14 +321,13 @@
 
 
 
+
 <!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="js/main.js"></script>
-<script src="js/contact.js"></script>
 
 
 
 
 </body>
 </html>
-

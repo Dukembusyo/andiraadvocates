@@ -1,17 +1,14 @@
+
 document.addEventListener("DOMContentLoaded", () => {
-  const cards = document.querySelectorAll(".contact-form-card, .contact-info-card, .team-card, .contact-cta");
+  const revealEls = document.querySelectorAll(".reveal");
+
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-      if(entry.isIntersecting){
-        entry.target.style.opacity = 1;
-        entry.target.style.transform = "translateY(0)";
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
       }
     });
   }, { threshold: 0.2 });
-  cards.forEach(card => {
-    card.style.opacity = 0;
-    card.style.transform = "translateY(30px)";
-    card.style.transition = "all 0.8s ease";
-    observer.observe(card);
-  });
+
+  revealEls.forEach(el => observer.observe(el));
 });
